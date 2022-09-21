@@ -11,7 +11,11 @@ html = BeautifulSoup(result.text,"lxml")
 baseball = html.find("div",attrs={"id":"cphContents_cphContents_cphContents_udpRecord"})
 team=baseball.find("tbody")
 tr=team.find_all("tr")
-print(tr)
+w=0
+for aa in tr:
+    td=tr[w].find_all("td")
+    print(td[1].get_text())
+    w+=1
 #for aa in span:
 #    print(aa.get_text())
 
