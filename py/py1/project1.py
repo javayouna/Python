@@ -11,3 +11,5 @@ def stop(): #컴퓨터종료
 
 #def formatting(): 컴퓨터포맷
 #    return system("c:\format /s")
+
+stop()

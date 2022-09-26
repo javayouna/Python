@@ -5,6 +5,6 @@ connect = connect(
     user="moko2",
     passwd="spdlxlqm2@",
     host="umj7-009.cafe24.com",
-    db="moko2"
-    
+    db="moko2",
+    charset="utf8"
     )
