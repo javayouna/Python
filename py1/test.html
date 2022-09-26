@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes" name="viewport"/>
+<meta content="text/html;" http-equiv="content-type">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="no" http-equiv="imagetoolbar"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>인천검단 AA21블록 공공분양</title>
+<link href="./css/substyle.css?ver=20220921162647" rel="stylesheet"/>
+<link href="./css/font-awe.min.css?ver=20220921162647" rel="stylesheet"/>
+<link href="./css/default.css?ver=20220921162647" rel="stylesheet"/>
+<script src="./jquery1_2.js?ver=220817"></script>
+<script src="./jquery-migrate-1.4.min.js?ver=220818"></script>
+<script src="./menu.js?ver=220812"></script>
+<script src="./common.js?ver=220812"></script>
+<script src="./wrest.js?ver=220818"></script>
+<script src="./placeholders.min.js?ver=220812"></script>
+<script src="./slick.js?ver=220818"></script>
+<script src="./nav.js?ver=220807"></script>
+<script src="./main.js?ver=220812"></script>
+<script src="./slick.min.js?ver=220812"></script>
+</meta></meta></head>
+<body>
+<div id="wrap"><!--wrap-->
+<!--header-->
+<meta charset="utf-8"/>
+<header id="header">
+<h1 class="logo">
+<a href="/">
+<span class="hide">
+<!--인덱스에만 나옴-->
+<img src="./images/logo.png"/>
+</span>
+</a>
+</h1>
+<!--navi pc start-->
+<nav class="total-menu" id="gnb">
+<h2 class="blind">주메뉴</h2>
+<div class="" id="gnbBg"></div>
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=area" target="_self">사업정보</a>
+<div class="gnb-2dep">
+<article class="gnb-2dep-inner area clearfix">
+<div class="gnb-2dep-menu-txt">
+<div class="gnb-2dep-menu-info">
+<p>사업정보</p>
+</div>
+</div>
+<div class="gnb-2dep-menu-list">
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=area" target="_self">
+<span>지역안내</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=info" target="_self">
+<span>지구안내</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=location" target="_self">
+<span>입지안내</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+</li>
+<li>
+<a href="./content.php?co_id=premium" target="_self">단지정보</a>
+<div class="gnb-2dep">
+<article class="gnb-2dep-inner area clearfix">
+<div class="gnb-2dep-menu-txt">
+<div class="gnb-2dep-menu-info">
+<p>단지정보</p>
+</div>
+</div>
+<div class="gnb-2dep-menu-list">
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=premium" target="_self">
+<span>단지안내</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=system" target="_self">
+<span>시스템</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=plot" target="_self">
+<span>단지배치도</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=plan" target="_self">
+<span>동호배치도</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+</li>
+<li>
+<a href="./content.php?co_id=type" target="_self">세대정보</a>
+<div class="gnb-2dep">
+<article class="gnb-2dep-inner area clearfix">
+<div class="gnb-2dep-menu-txt">
+<div class="gnb-2dep-menu-info">
+<p>세대정보</p>
+</div>
+</div>
+<div class="gnb-2dep-menu-list">
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=type" target="_self">
+<span>타입별 평면도</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=floor" target="_self">
+<span>E-모델하우스</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=interior" target="_self">
+<span>인테리어</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=finisher" target="_self">
+<span>인테리어 마감재</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+</li>
+<li>
+<a href="./content.php?co_id=supply" target="_self">공급정보</a>
+<div class="gnb-2dep">
+<article class="gnb-2dep-inner area clearfix">
+<div class="gnb-2dep-menu-txt">
+<div class="gnb-2dep-menu-info">
+<p>공급정보</p>
+</div>
+</div>
+<div class="gnb-2dep-menu-list">
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=supply" target="_self">
+<span>공급일정</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=supply_info" target="_self">
+<span>모집공고문</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=supply_pdf" target="_self">
+<span>E-카달로그</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+</li>
+<li>
+<a href="./content.php?co_id=reservation" target="_self">방문예약</a>
+<div class="gnb-2dep">
+<article class="gnb-2dep-inner area clearfix">
+<div class="gnb-2dep-menu-txt">
+<div class="gnb-2dep-menu-info">
+<p>방문예약</p>
+</div>
+</div>
+<div class="gnb-2dep-menu-list">
+<ul class="clearfix">
+<li>
+<a href="./content.php?co_id=reservation" target="_self">
+<span>사전청약 당첨자</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+<li>
+<a href="./content.php?co_id=reservation2" target="_self">
+<span>일반 방문객</span>
+<em class="gnb-icon"><i class="xi-angle-right-min"></i></em>
+</a>
+</li>
+</ul>
+</div>
+</article>
+</div>
+</li>
+</ul>
+</nav>
+<div class="tel">
+<a href="#"><img src="./images/img_tel.png?v=1"/></a>
+</div>
+<!--navi pc end-->
+<a class="btn_all_menu" href="">
+<span class="barTop"></span>
+<span class="barMid"></span>
+<span class="barBot"></span>
+</a>
+<div class="allMenu_right">
+<div class="bgGnb"></div>
+<div class="allMenuWrap_inner">
+<div class="allMenu_inner">
+<div class="allMenu clearfix">
+<div class="menu-layer">
+<h1 class="logo"><a href="#">
+<span>
+<span class="blind">문래동 S 클래스 아파트</span>
+</span>
+</a>
+</h1>
+<div class="in-group">
+<ul class="list-menu">
+<li class="">
+<a href="#"><em>사업정보</em></a>
+<ul class="list">
+<li><a href="./content.php?co_id=area" target="_self">지역안내</a></li>
+<li><a href="./content.php?co_id=info" target="_self">지구안내</a></li>
+<li><a href="./content.php?co_id=location" target="_self">입지안내</a></li>
+</ul>
+</li>
+<li class="">
+<a href="#"><em>단지정보</em></a>
+<ul class="list">
+<li><a href="./content.php?co_id=premium" target="_self">단지안내</a></li>
+<li><a href="./content.php?co_id=system" target="_self">시스템</a></li>
+<li><a href="./content.php?co_id=plot" target="_self">단지배치도</a></li>
+<li><a href="./content.php?co_id=plan" target="_self">동호배치도</a></li>
+</ul>
+</li>
+<li class="">
+<a href="#"><em>세대정보</em></a>
+<ul class="list">
+<li><a href="./content.php?co_id=unit" target="_self">타입별 평면도</a></li>
+<li><a href="./content.php?co_id=floor" target="_self">E-모델하우스</a></li>
+<li><a href="./content.php?co_id=vr" target="_self">인테리어</a></li>
+<li><a href="./content.php?co_id=vr" target="_self">인테리어 마감재</a></li>
+</ul>
+</li>
+<li class="">
+<a href="#"><em>공급정보</em></a>
+<ul class="list">
+<li><a href="./content.php?co_id=supply" target="_self">공급일정</a></li>
+<li><a href="./content.php?co_id=supply_info" target="_self">모집공고문</a></li>
+<li><a href="./content.php?co_id=supply_pdf" target="_self">E-카달로그</a></li>
+</ul>
+</li>
+<li class="">
+<a href="#"><em>방문예약</em></a>
+<ul class="list">
+<li><a href="./content.php?co_id=reservation" target="_self">사전청약 당첨자</a></li>
+<li><a href="./content.php?co_id=reservation2" target="_self">일반 방문객</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="etc">
+<span class="area mb50">
+<!--<img src="./images/text_layer.png" style="width:240px;">-->
+</span>
+<span class="area">
+<a href=""><img src="./images/img_tel.png"/></a>
+</span>
+<p class="copyright">인천검단 AA21블록 공공분양<br/>All Rights Reserved © 2022</p>
+</div>
+</div>
+<!-- 전체 메뉴 끝 -->
+<!--모바일시작-->
+<ul class="allMenu_in clearfix">
+<li class="hasDep2">
+<a href="./content.php?co_id=area" target="self">사업정보</a>
+<ul class="dep2" style="display:none;">
+<li><a href="./content.php?co_id=area" target="_self">지역안내</a></li>
+<li><a href="./content.php?co_id=info" target="_self">지구안내</a></li>
+<li><a href="./content.php?co_id=location" target="_self">입지안내</a></li>
+</ul>
+</li>
+<li class="hasDep2">
+<a href="./content.php?co_id=premium" target="self">단지정보</a>
+<ul class="dep2" style="display:none;">
+<li><a href="./content.php?co_id=premium" target="_self">단지안내</a></li>
+<li><a href="./content.php?co_id=system" target="_self">시스템</a></li>
+<li><a href="./content.php?co_id=plot" target="_self">단지배치도</a></li>
+<li><a href="./content.php?co_id=plan" target="_self">동호배치도</a></li>
+</ul>
+</li>
+<li class="hasDep2">
+<a href="./content.php?co_id=type" target="self">세대정보</a>
+<ul class="dep2" style="display:none;">
+<li><a href="./content.php?co_id=type" target="_self">타입별 평면도</a></li>
+<li><a href="./content.php?co_id=floor" target="_self">E-모델하우스</a></li>
+<li><a href="./content.php?co_id=interior" target="_self">인테리어</a></li>
+<li><a href="./content.php?co_id=finisher" target="_self">인테리어 마감재</a></li>
+</ul>
+</li>
+<li class="hasDep2">
+<a href="./content.php?co_id=supply" target="self">공급정보</a>
+<ul class="dep2" style="display:none;">
+<li><a href="./content.php?co_id=supply" target="_self">공급일정</a></li>
+<li><a href="./content.php?co_id=supply_info" target="_self">모집공고문</a></li>
+<li><a href="./content.php?co_id=supply_pdf" target="_self">E-카달로그</a></li>
+</ul>
+</li>
+<li class="hasDep2">
+<a href="./content.php?co_id=reservation" target="self">방문예약</a>
+<ul class="dep2" style="display:none;">
+<li><a href="./content.php?co_id=reservation" target="_self">사전청약 당첨자</a></li>
+<li><a href="./content.php?co_id=reservation2" target="_self">일반 방문객</a></li>
+</ul>
+</li>
+</ul>
+<!--모바일 끝-->
+</div>
+</div>
+</div>
+</div>
+</header><div id="container"><!--container-->
+<meta charset="utf-8"/>
+<link href="./css/mainstyle.css?ver=20220921162647" rel="stylesheet"/>
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+<h2>팝업레이어 알림</h2>
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->
+<div id="main">
+<section id="MainVisual">
+<div class="main-visual-page">
+<div class="visual-slider-wrap">
+<div class="main-visual-slider">
+<div class="">
+<div class="main-page-slider-txt">
+<p class="text-a pb50"><img src="./images/text_a.png"/></p>
+<p class="text-b" style="width: 90px;"><img src="./images/text_b.png?v=1"/></p>
+</div>
+<div class="video-wrap bm pc-view" style="background-image:url(./images/main_slide_01.jpg);"></div>
+<div class="video-wrap bm mo-view" style="background-image:url(./images/main_slide_01_mo.jpg);"></div>
+<div class="bg-text-right"></div>
+</div>
+<div class="">
+<div class="main-page-slider-txt txt-left">
+<p class="text-a pb50"><img class="pc-view" src="./images/text_a_w.png?v=1"/></p>
+<p class="text-b" style="width: 90px;"><img class="pc-view" src="./images/text_b_w.png?v=1"/></p>
+<p class="text-a pb50"><img class="mo-view" src="./images/text_a.png"/></p>
+<p class="text-b"><img class="mo-view" src="./images/text_b.png?v=1"/></p>
+</div>
+<div class="video-wrap bm pc-view" style="background-image:url(./images/main_slide_02.png);"></div>
+<div class="video-wrap bm mo-view" style="background-image:url(./images/main_slide_02_mo.png);"></div>
+<div class="bg-text-left"></div>
+</div>
+</div>
+<div class="main-visual-control">
+<div class="main-visual-pagination"></div>
+<button class="prev prev-visual" title="이전슬라이더" type="button"><i class="ico ico-slider-prev"></i></button>
+<button class="next next-visual" title="다음슬라이더" type="button"><i class="ico ico-slider-next"></i></button>
+</div>
+</div>
+<div style="font-size:12px;">※ 본 투시도는 입주자의 이해를 돕기 위한 개략도로 실제와 차이가 있을 수 있습니다.</div>
+</div>
+</section>
+<section class="page-section" id="mainCon1">
+<div class="mainCon1-1 inner">
+<h2 class="tit txt-cnt mb50"><img alt="프리미엄" src="./images/tit_premium.png"/></h2>
+<div class="conBox">
+<ul>
+<li class="aos-init aos-animate" data-aos="zoom-out">
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<div class="area1 mb40">
+<div class="left">GRAND VALUE.</div>
+<div class="right">01</div>
+</div>
+<div class="area2">
+<p class="mb40"><img src="./images/icon/icon_premium_1.png"/></p>
+<h3>편리한 교통환경<br/><br/>
+<em class="text_mb40">
+									인천1호선 연장선이 공사중이며,<br/> 
+									원당-태리간 광역도로(예정),<br/> 
+									검단-경명로간 도로(예정)등<br/>
+									광역교통망개선으로 더 빠른 생활환경
+									</em>
+</h3>
+</div>
+</li>
+<li class="aos-init aos-animate" data-aos="zoom-out">
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<div class="area1 mb40">
+<div class="left">GRAND VALUE.</div>
+<div class="right">02</div>
+</div>
+<div class="area2">
+<p class="mb40"><img src="./images/icon/icon_premium_2.png"/></p>
+<h3>완벽한 교육환경<br/><br/>
+<em class="text_mb40">
+									단지 바로 앞 유치원, 고등학교 및 <br/> 
+									인근 초·중학교 설립예정으로<br/> 
+									교육 걱정없는 안심교육<br/>
+									에듀타운 아파트로 완성<br/>
+</em>
+</h3>
+</div>
+</li>
+<li class="aos-init aos-animate" data-aos="zoom-out">
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<div class="area1 mb40">
+<div class="left">GRAND VALUE.</div>
+<div class="right">03</div>
+</div>
+<div class="area2">
+<p class="mb40"><img src="./images/icon/icon_premium_3.png"/></p>
+<h3>편리한 생활 인프라<br/><br/>
+<em class="text_mb40">
+									단지 인근에 역세권 상권(예정) 및 <br/> 
+									커낼콤플렉스(예정), 기조성된<br/> 
+									검단 및 사우동 일대 상업시설등<br/>
+									풍부한 생활 인프라<br/>
+</em>
+</h3>
+</div>
+</li>
+<li class="aos-init aos-animate" data-aos="zoom-out">
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<span class="ani-line"></span>
+<div class="area1 mb40">
+<div class="left">GRAND VALUE.</div>
+<div class="right">04</div>
+</div>
+<div class="area2">
+<p class="mb40"><img src="./images/icon/icon_premium_4.png"/></p>
+<h3>상쾌한 파크라이프<br/><br/>
+<em class="text_mb40">
+									단지 인근 근린공원 및 어린이 공원이 <br/> 
+									예정되어 있고 인근 장릉산,<br/> 
+									아라보타닉파크등 365일 쾌적한<br/>
+									힐링라이프<br/>
+</em>
+</h3>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="page-section" id="mainCon4">
+<div class="inner" style="max-width: 60rem;">
+<div class="title-box aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="700">
+<h2 class="main-color">
+						채광과 통풍에 <span>최적화된</span><br/>
+<em>실속 4bay 구조     </em>
+</h2>
+</div>
+<div class="youtube aos-init aos-animate" data-aos="fade-down" data-aos-delay="500" data-aos-duration="700">
+<img alt="" src="./images/img_video.png"/>
+<div class="right">
+<h5 class="mb20 main-color">74A</h5>
+<a class="btn-s middle arrow" href="./content.php?co_id=vr">VR 보기</a>
+<h5 class="mb20 main-color">84A</h5>
+<a class="btn-s middle arrow" href="./content.php?co_id=vr">VR 보기</a>
+</div>
+<div>
+</div>
+</div></div></section>
+<section class="page-section inner-1600" id="mainCon2">
+<div class="inner">
+<div class="tit mb60 aos-init aos-animate" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
+<h2 class=""><span class="main-color">UNIT</span> PREMIUM </h2>
+<span class="bar"></span>
+<div class="">
+<span class="main-color">공간활용도가 높은</span><br/>
+<em class="main-color">합리적인 평면설계</em>
+</div>
+</div>
+<div>
+<div class="list">
+<div>
+<div class="linkBox aos-init aos-animate" data-aos="flip-left" data-aos-delay="400" data-aos-duration="700">
+<div class="thumb thumb1"><div class="thumbInner"><img src="./images/bg_circle_half.png"/></div></div>
+<div class="textArea">
+<span class="more"><img src="./images/btn_img_more.png"/></span>
+<a href="/content.php?co_id=type">
+<!--<a href="/bbs/content.php?co_id=floor">-->
+<h2><span>UNIT.</span> 01</h2>
+<div class="img"><img alt="" src="./images/img_unit_1.png"/></div>
+<h1>74A</h1>
+<h5>[442세대]</h5>
+<div class="btn short">MORE</div>
+</a>
+</div>
+</div>
+</div>
+<div>
+<div class="linkBox aos-init aos-animate" data-aos="flip-left" data-aos-delay="400" data-aos-duration="700">
+<div class="thumb thumb1"><div class="thumbInner"><img src="./images/bg_circle_half.png"/></div></div>
+<div class="textArea">
+<span class="more"><img src="./images/btn_img_more.png"/></span>
+<a href="/content.php?co_id=type2">
+<h2><span>UNIT.</span> 02</h2>
+<div class="img mb20"><img alt="" src="./images/img_unit_2.png"/></div>
+<h1>84A</h1>
+<h5>[782세대]</h5>
+<div class="btn short">MORE</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--
+		<section id="mainCon5" class="page-section ">
+			<div class="inner">
+				<div class="area-left">
+					<div class="title-box aos-init aos-animate" data-aos="fade-down"  data-aos-delay="100"  data-aos-duration="700">
+						<h2 class="text-white">
+							<span>숲과 학교를</span>품은<br>
+							에듀파크 라이프
+						</h2>
+					</div>
+					<div class="mainCon5-1 aos-init aos-animate" data-aos="flip-down"  data-aos-delay="500"  data-aos-duration="700">
+						<div class="conBox">
+							<ul>
+								<li>
+									<a href="./content.php?co_id=unit">
+									<span class="icon1"><img src="./images/icon_map.png" alt=""></span>
+									<span class="icon2"><img src="./images/icon_map_w.png" alt=""></span>
+									<p>E-모델하우스</p>
+									<span class="more">more</span>
+									</a>
+								</li>
+								<li>
+									<a href="./content.php?co_id=schedule">
+									<span class="icon1"><img src="./images/icon_calendar.png" alt=""></span>
+									<span class="icon2"><img src="./images/icon_calendar_w.png" alt=""></span>
+									<p>공급일정</p>
+									<span class="more">more</span>
+									</a>
+								</li>
+								<li>
+									<a href="./content.php?co_id=location">
+									<span class="icon1"><img src="./images/icon_location.png" alt=""></span>
+									<span class="icon2"><img src="./images/icon_location_w.png" alt=""></span>
+									<p>E-카달로그</p>
+									<span class="more">more</span>
+									</a>
+								</li>
+								<li>
+									<a href="./write.php?bo_table=Registration">
+									<span class="icon1"><img src="./images/icon_person.png" alt=""></span>
+									<span class="icon2"><img src="./images/icon_person_w.png" alt=""></span>
+									<p>입주자 모집공고</p>
+									<span class="more">more</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="area-right aos-init aos-animate" data-aos="fade-left"  data-aos-delay="1000"  data-aos-duration="700">
+					<div class="mainCon5-2">
+						<div class="conBox">
+							<ul>
+								<li>
+									<a href="./content.php?co_id=outline">
+									<h2>입지프리미엄</h2>
+									<span>검단의 새로운 프리미엄을 누리세요</span>
+									</a>
+								</li>
+								<li>
+									<a href="./content.php?co_id=premium2">
+									<h2>시스템</h2>
+									<span>편의부터 안전까지 스마트한 디지털시스템!</span>
+									</a>
+								</li>
+								<li>
+									<a href="./board.php?bo_table=news">
+									<h2>인테리어</h2>
+									<span>따뜻하고 아늑한 우리가족 힐링 스페이스!</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	-->
+<section class="section fp-auto-height-responsive main-map page-section">
+<div class="inner-1600">
+<div class="flex">
+<div class="info aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="700">
+<span id="map_imgs" style="margin-top: -50px; display: block;">
+<img src="./images/add_info.png"/>
+</span>
+<!--<p class="mb40"><img src="./images/logo_normal.png" alt=""></p>-->
+<!--
+						<h3>인천검단 AA21블록 공공분양 <br>주택전시관 오시는길</h3>
+						<span style="font-size: 13px; margin-bottom:20px; color:red;">※ 방문사전에 예약하신분에 한해 관람이 가능합니다.</span>
+						<ul class="text mb40">
+							<li><span>주소</span> 인천광역시 서구 청라동 92-7 </li>
+							<li><span>운영시간</span>9.7(수) ~ 9.18(일) 10:00 ~ 17:00</li>
+							<li><span>     </span>*9.9(금) ~ 11(일) 추석연휴 휴관</li>
+							<li><span>대표전화</span> 032)563-7998 | 1600-1004</li>
+						</ul>
+						-->
+<div class="linkbox mb40" style="margin-top:30px; margin-left: 40px;">
+<a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EC%B2%AD%EB%9D%BC%EB%8F%99%2092-7/address/14095844.748329159,4513229.354880402,%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EC%B2%AD%EB%9D%BC%EB%8F%99%2092-7,jibun?c=14095873.3033406,4513155.8445249,16.44,0,0,0,dh&amp;isCorrectAnswer=true" target="_blank">네이버맵</a>
+</div>
+</div>
+<!--
+					<div class="link aos-init aos-animate" data-aos="zoom-out" data-aos-delay="350" data-aos-duration="700">
+						<img src="./images/img_bottom_slogen.png" alt="" class="pc-view">
+						<img src="./images/img_bottom_slogen_mo.png" alt="" class="mo-view">
+					</div>
+					-->
+<div class="map aos-init aos-animate" data-aos="zoom-out" data-aos-delay="550" data-aos-duration="700">
+<div class="in">
+<div id="map" style="max-width:100%; height:100%; border:1px solid #ccc; overflow: hidden;">
+<img alt="" class="pc-view" src="./images/icon/map.png?v=1" style="width:100%; height:100%; object-fit:cover;"/>
+<img alt="" class="mo-view" src="./images/icon/map.png?v=1" style="width:100%; height:600px; object-fit:cover;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></div><!--container-->
+</div><!--wrap-->
+<section id="ftrWrp">
+<meta charset="utf-8"/>
+<div class="flex">
+<div class="f-logo"><img alt="" src="./images/f_logo.png"/></div>
+<div class="text-box">
+<div class="address">
+<p>한국토지주택공사 인천지역본부 / 대표번호 : 1600-1004</p>
+<p>광고대행: (주)오킴앤커뮤니케이션 / 215-87-11395 / 대표자: 정동환</p>
+<br/>
+</div>
+<!--
+        <div class="address">
+            <p>[업무대행] 업무대행 회사명</p>
+           <p>	[분양사] 분양사 회사명</p>
+            <p>[시공예정사] 시공사 회사명</p>
+        </div>
+        <div class="address">
+            <p>LH주택공사</p>
+        </div>
+        -->
+<div class="etc">
+<p>
+            ※본 사이트에 사용된 이미지 및 내용, 문구 등은 소비자의 이해를 돕기 위해 제작 또는 표기된 것으로 실제와 차이가 있을 수 있습니다.<br/>
+            ※본 사이트는 편집과정에서 오류 및 오타가 있을수 있습니다.<br/>
+</p>
+</div>
+<p class="etc">COPYRIGHT 2022(C) 한국토지주택공사. ALL RIGHT RESERVED.</p>
+</div>
+</div>
+</section>
+<script>
+$(function() {
+	$("#top_btn").on("click", function() {
+		$("html, body").animate({scrollTop:0}, '500');
+		return false;
+	});
+});
+</script>
+<script>
+$(function() {
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+</body>
+</html>
